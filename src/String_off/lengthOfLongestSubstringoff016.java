@@ -15,22 +15,22 @@ public class lengthOfLongestSubstringoff016 {
             if(cnt.getOrDefault(s.charAt(r),0)==0){
                 cnt.put(s.charAt(r),cnt.getOrDefault(s.charAt(r),0)+1);
                 len++;
+                r++;
             }
             else{//有重复的
+                max = Math.max(max,len);//更新len
                 cnt.put(s.charAt(l),cnt.getOrDefault(s.charAt(l),0)-1);
                 l++;
-                cnt.put(s.charAt(r),cnt.getOrDefault(s.charAt(r),0)+1);
-                max = Math.max(max,len);
-                len = r-l+1;
+                len = r-l;
+
             }
-            r++;
         }
 
         return max>len?max:len;
     }
 
     public static void main(String[] args) {
-        String s = "pwwkew";
+        String s = "";
         lengthOfLongestSubstringoff016 los = new lengthOfLongestSubstringoff016();
         System.out.println(los.lengthOfLongestSubstring(s));
     }
