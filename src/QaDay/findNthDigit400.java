@@ -36,7 +36,6 @@ public class findNthDigit400 {
         int dnum = (int) (Math.pow(10,d-1)+index/d);//算出n位数所在的整数
         int digit = (dnum/(int)(Math.pow(10,d-(index % d)-1)))%10;
         return digit;
-
     }
     //算到第d位数所有数位之和
     public int countDigt(int d){
