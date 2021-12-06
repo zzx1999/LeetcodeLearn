@@ -32,6 +32,6 @@ public class isAlienSortedoff034 {
         String[] words = {"hello","leetcode"};
         String order = "hlabcdefgijkmnopqrstuvwxyz";
         isAlienSortedoff034 ia = new isAlienSortedoff034();
-        System.out.println(ia.isAlienSorted(words,order));
+//        System.out.println(ia.isAlienSorted(words,order));
     }
 }
