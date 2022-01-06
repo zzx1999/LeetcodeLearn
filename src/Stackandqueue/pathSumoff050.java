@@ -13,6 +13,7 @@ public class pathSumoff050 {
 //            return pathSum(root.left,targetSum-root.val) + pathSum(root.left,targetSum)+pathSum(root.right,targetSum-root.val)+pathSum(root.right,targetSum);
 //        }
     }
+
     public int rootSum(TreeNode root,int val){//包含该节点的路径和为val的路径数目
         if(root==null)
             return 0;
